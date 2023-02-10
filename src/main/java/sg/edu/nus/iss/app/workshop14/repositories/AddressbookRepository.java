@@ -35,8 +35,5 @@ public class AddressbookRepository {
         return ctcs;
     }
 
-    private void toList() {
-        // TODO
-    }
 
 }
