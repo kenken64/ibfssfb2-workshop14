@@ -61,5 +61,4 @@ public class RedisConfig {
         redisTemplate.setHashValueSerializer(objSerializer);
         return redisTemplate;
     }
-
 }

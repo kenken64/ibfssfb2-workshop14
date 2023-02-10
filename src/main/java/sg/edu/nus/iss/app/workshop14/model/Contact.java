@@ -38,10 +38,8 @@ public class Contact implements Serializable{
     private int age;
 
     public Contact(){
-
+        this.id = generateId(8);
     }
-
-    
 
     public Contact(String name, String email, String phoneNumber,
         LocalDate dateOfBirth){

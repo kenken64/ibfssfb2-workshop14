@@ -14,6 +14,7 @@ public class AddressbookRepository {
     
 
     public void save(final Contact ctc){
+        System.out.println(" ctc.getId() " + ctc.getId());
         redisTemplate.opsForList().leftPush("contactlist", ctc.getId());
         redisTemplate.opsForHash().put("addressbookmap", ctc.getId(), ctc);
     }
